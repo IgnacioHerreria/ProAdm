@@ -15,7 +15,6 @@ import { PagesModule } from "./pages/pages.module";
     AppComponent,
     LoginComponent,
     RegisterComponent,
-
   ],
   imports: [BrowserModule, AppRoutingModule, APP_ROUTES, PagesModule],
   providers: [],
