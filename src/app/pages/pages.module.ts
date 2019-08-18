@@ -7,12 +7,22 @@ import { ProgressComponent } from "./progress/progress.component";
 import { SharedModule } from "../shared/shared.modules";
 import { PAGES_ROUTES } from "./pages.routes";
 
+//TEMP
+import { FormsModule } from "@angular/forms";
+import { IncrementableComponent } from '../components/incrementable/incrementable.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraphicDonutComponent } from '../components/graphic-donut/graphic-donut.component';
+import { AccountSettingsComponent } from '../account-settings/account-settings.component';
+
 @NgModule({
   declarations: [
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    GraphicsComponent
+    GraphicsComponent,
+    IncrementableComponent,
+    GraphicDonutComponent,
+    AccountSettingsComponent
   ],
   exports: [
     PagesComponent,
@@ -20,6 +30,6 @@ import { PAGES_ROUTES } from "./pages.routes";
     ProgressComponent,
     GraphicsComponent
   ],
-  imports: [SharedModule, PAGES_ROUTES]
+  imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule]
 })
 export class PagesModule {}
