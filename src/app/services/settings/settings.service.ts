@@ -6,7 +6,7 @@ import { DOCUMENT } from "@angular/common";
 })
 export class SettingsService {
   settings: Settings = {
-    themeUrl: "ssets/css/colors/default.css",
+    themeUrl: "assets/css/colors/default.css",
     theme: "default"
   };
   constructor(@Inject(DOCUMENT) private _document) {

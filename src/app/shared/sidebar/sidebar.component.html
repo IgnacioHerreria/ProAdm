@@ -23,7 +23,7 @@
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i [class]="menu.icon"></i><span class="hide-menu">{{menu.title}} <span class="label label-rouded label-themecolor pull-right">{{menu.submenu.length}}</span></span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li *ngFor="let sub of menu.submenu">
-                            <a routerLinkActive="active" [routerLink]="[sub.url]" routerLinkActive="router-link-active">{{sub.title}} </a></li>
+                            <a routerLinkActive="active" [routerLink]="[sub.url]">{{sub.title}} </a></li>
 
                     </ul>
                 </li>
