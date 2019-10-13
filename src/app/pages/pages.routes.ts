@@ -4,6 +4,7 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { GraphicsComponent } from "./graphics/graphics.component";
 import { AccountSettingsComponent } from '../account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 
 const pagesRoutes: Routes = [
@@ -14,6 +15,7 @@ const pagesRoutes: Routes = [
       { path: "dashboard", component: DashboardComponent },
       { path: "progress", component: ProgressComponent },
       { path: "graphics", component: GraphicsComponent },
+      { path: "promesas", component: PromesasComponent },
       { path: "accountSettings", component: AccountSettingsComponent },
       { path: "", redirectTo: "/dashboard", pathMatch: "full" }
     ]

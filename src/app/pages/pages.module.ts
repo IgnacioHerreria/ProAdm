@@ -13,6 +13,7 @@ import { IncrementableComponent } from '../components/incrementable/incrementabl
 import { ChartsModule } from 'ng2-charts';
 import { GraphicDonutComponent } from '../components/graphic-donut/graphic-donut.component';
 import { AccountSettingsComponent } from '../account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AccountSettingsComponent } from '../account-settings/account-settings.c
     GraphicsComponent,
     IncrementableComponent,
     GraphicDonutComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent
   ],
   exports: [
     PagesComponent,
