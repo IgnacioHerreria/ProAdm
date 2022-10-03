@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  .container {
+    background-color: #454142;
+    padding: 6.6rem;
+    margin: 3.3rem;
+    /* display: flex;
+      flex-wrap: wrap; */
+    /* justify-content: end;
+      flex-direction: column; */
+    /* margin-right: 4rem; */
+    width: 100%;
+  }
+  .dollar:before {
+    white-space: nowrap;
+    content: "$";
+  }
+
+  .plan-price sub {
+    text-transform: none;
+    font-size: 2rem;
+    bottom: 0;
+  }
+
+  .plan-price {
+    font-weight: bold;
+    color: #454142;
+    font-size: 4rem;
+    line-height: 50px;
+  }
+
+  sub {
+    position: relative;
+    vertical-align: baseline;
+  }
+  .rubro {
+    margin: 0 1.3rem;
+  }
+  .detalle-rubro {
+    font-size: 2rem;
+    font-weight: bold;
+  }

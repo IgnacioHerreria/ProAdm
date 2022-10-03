@@ -18,14 +18,12 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-5"></div>
+    <div class="container d-flex  justify-content-end">
         <div class="col-6">
-          <div class="m-4 card">
+          <div class="card">
             <div class="card-body">
               <div
-                class="card-title d-flex align-content-start justify-content-between"
+                class="card-title d-flex flex-wrap align-content-start justify-content-between"
                 style="margin-top: 1.3rem"
               >
                 <div class="rubro">
@@ -61,7 +59,6 @@
                   </p>
                   <div class="plan-price">48 meses</div>
                 </div>
-                <div class="rubro"><p></p></div>
                 <div class="rubro">
                   <p
                     class="m-0 p-0 text-muted"
@@ -116,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="m-4 card">
+          <div class="card">
             <div class="card-body">
               <div
                 class="card-title d-flex align-content-start justify-content-between"
@@ -239,64 +236,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1"></div>
+        <!-- </div> -->
+        <!-- <div class="col-1"></div> -->
       </div>
-    </div>
-  </body>
+      <div class="col-2"></div>
+      </body>
 </html>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.6rem;
-}
-.container {
-  background-color: #454142;
-  padding: 6.6rem;
-  /* display: flex;
-  flex-wrap: wrap; */
-  justify-content: end;
-  flex-direction: column;
-  margin-right: 4rem;
-  width: 500px;
-}
-
-.card {
-  margin-right: 14rem;
-  border-radius: 1.3rem;
-}
-.dollar:before {
-  white-space: nowrap;
-  content: "$";
-}
-
-.plan-price sub {
-  text-transform: none;
-  font-size: 2rem;
-  bottom: 0;
-}
-
-.plan-price {
-  font-weight: bold;
-  color: #454142;
-  font-size: 4rem;
-  line-height: 50px;
-}
-
-sub {
-  position: relative;
-  vertical-align: baseline;
-}
-.rubro {
-  margin: 0 1.3rem;
-}
-.detalle-rubro {
-  font-size: 2rem;
-  font-weight: bold;
-}
