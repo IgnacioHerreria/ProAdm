@@ -5,7 +5,6 @@ import { GraphicsComponent } from "./graphics/graphics.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { SharedModule } from "../shared/shared.modules";
-import { PAGES_ROUTES } from "./pages.routes";
 
 // TEMP
 import { FormsModule } from "@angular/forms";
@@ -15,6 +14,7 @@ import { GraphicDonutComponent } from "../components/graphic-donut/graphic-donut
 import { AccountSettingsComponent } from "../account-settings/account-settings.component";
 import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from "./rxjs/rxjs.component";
+import { PagesRoutingModule } from './pages.routes';
 
 @NgModule({
   declarations: [
@@ -34,6 +34,6 @@ import { RxjsComponent } from "./rxjs/rxjs.component";
     ProgressComponent,
     GraphicsComponent
   ],
-  imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule]
+  imports: [SharedModule, PagesRoutingModule, FormsModule, ChartsModule]
 })
-export class PagesModule {}
+export class PagesModule { }

@@ -7,7 +7,9 @@ import { GraphicsComponent } from "./graphics/graphics.component";
 import { AccountSettingsComponent } from "../account-settings/account-settings.component";
 import { PromesasComponent } from "./promesas/promesas.component";
 
-const pagesRoutes: Routes = [
+import { NgModule } from '@angular/core';
+
+const routes: Routes = [
   {
     path: "",
     component: PagesComponent,
@@ -43,4 +45,9 @@ const pagesRoutes: Routes = [
   }
 ];
 
-export const PAGES_ROUTES = RouterModule.forChild(pagesRoutes);
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class PagesRoutingModule { }
+

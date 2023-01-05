@@ -6,31 +6,25 @@ import { FormsModule } from "@angular/forms";
 //SERVICES
 import { ServiceModule } from "./services/service.module";
 
-//ROUTES
-import { APP_ROUTES } from "./app.routes";
-
 import { AppComponent } from "./app.component";
-import { LoginComponent } from "./auth/login/login.component";
 import { PagesModule } from "./pages/pages.module";
-import { RegisterComponent } from "./auth/register/register.component";
 import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
+import { AuthModule } from "./auth/auth.module";
 
 @NgModule({
   declarations:
     [
       AppComponent,
-      LoginComponent,
-      RegisterComponent,
       PagenotfoundComponent
     ],
   providers: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTES,
     PagesModule,
     FormsModule,
     ServiceModule,
+    AuthModule
   ],
   bootstrap: [AppComponent]
 })
