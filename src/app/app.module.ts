@@ -10,9 +10,9 @@ import { ServiceModule } from "./services/service.module";
 import { APP_ROUTES } from "./app.routes";
 
 import { AppComponent } from "./app.component";
-import { LoginComponent } from "./login/login.component";
-import { RegisterComponent } from "./login/register.component";
+import { LoginComponent } from "./auth/login/login.component";
 import { PagesModule } from "./pages/pages.module";
+import { RegisterComponent } from "./auth/register/register.component";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
