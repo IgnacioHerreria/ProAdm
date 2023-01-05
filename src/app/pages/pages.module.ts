@@ -14,7 +14,7 @@ import { GraphicDonutComponent } from "../components/graphic-donut/graphic-donut
 import { AccountSettingsComponent } from "../account-settings/account-settings.component";
 import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from "./rxjs/rxjs.component";
-import { PagesRoutingModule } from './pages.routes';
+import { PagesRoutingModule } from './pages.routing';
 
 @NgModule({
   declarations: [

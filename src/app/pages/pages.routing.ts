@@ -11,11 +11,11 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path: "",
+    path: "dashboard",
     component: PagesComponent,
     children: [
       {
-        path: "dashboard",
+        path: "",
         component: DashboardComponent,
         data: { title: "Dashboard" }
       },
@@ -40,7 +40,6 @@ const routes: Routes = [
         component: AccountSettingsComponent,
         data: { title: "Settings Account" }
       },
-      { path: "", redirectTo: "/dashboard", pathMatch: "full" }
     ]
   }
 ];
