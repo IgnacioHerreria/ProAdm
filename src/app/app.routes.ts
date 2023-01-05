@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from "@angular/router";
 
 import { LoginComponent } from "./auth/login/login.component";
-import { PagenotfoundComponent } from "./shared/pagenotfound/pagenotfound.component";
+import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 import { RegisterComponent } from "./auth/register/register.component";
 
 const appRoutes: Routes = [

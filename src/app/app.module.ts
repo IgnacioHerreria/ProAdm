@@ -13,9 +13,16 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from "./auth/login/login.component";
 import { PagesModule } from "./pages/pages.module";
 import { RegisterComponent } from "./auth/register/register.component";
+import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent],
+  declarations:
+    [
+      AppComponent,
+      LoginComponent,
+      RegisterComponent,
+      PagenotfoundComponent
+    ],
   providers: [],
   imports: [
     BrowserModule,
@@ -23,8 +30,8 @@ import { RegisterComponent } from "./auth/register/register.component";
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
