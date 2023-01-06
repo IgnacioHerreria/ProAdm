@@ -14,11 +14,11 @@ export class RxjsComponent implements OnInit, OnDestroy {
     this.subscription = this.getCountObservable().subscribe(
       numero => console.log("Subscription", numero),
       error => error.log("Error", error),
-      () => console.log("Subscription Finalizada")
+      () => console.info("Subscription Finalizada")
     );
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
   ngOnDestroy() {
     console.log("Subscription finalized");
     this.subscription.unsubscribe();

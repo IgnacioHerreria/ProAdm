@@ -7,14 +7,11 @@ import { ProgressComponent } from "./progress/progress.component";
 import { SharedModule } from "../shared/shared.modules";
 
 // TEMP
-import { FormsModule } from "@angular/forms";
-import { IncrementableComponent } from "../components/incrementable/incrementable.component";
-import { ChartsModule } from "ng2-charts";
-import { GraphicDonutComponent } from "../components/graphic-donut/graphic-donut.component";
-import { AccountSettingsComponent } from "../account-settings/account-settings.component";
+import { AccountSettingsComponent } from "./account-settings/account-settings.component";
 import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from "./rxjs/rxjs.component";
-import { PagesRoutingModule } from './pages.routing';
+import { PagesRoutingModule } from "./pages.routing";
+import { ComponentsModule } from "../components/components.module";
 
 @NgModule({
   declarations: [
@@ -22,18 +19,20 @@ import { PagesRoutingModule } from './pages.routing';
     DashboardComponent,
     ProgressComponent,
     GraphicsComponent,
-    IncrementableComponent,
-    GraphicDonutComponent,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
   ],
   exports: [
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    GraphicsComponent
+    GraphicsComponent,
   ],
-  imports: [SharedModule, PagesRoutingModule, FormsModule, ChartsModule]
+  imports: [
+    SharedModule,
+    PagesRoutingModule,
+    ComponentsModule,
+  ],
 })
 export class PagesModule { }

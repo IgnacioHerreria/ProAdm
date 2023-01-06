@@ -4,7 +4,7 @@ import { PagesComponent } from "./pages.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { GraphicsComponent } from "./graphics/graphics.component";
-import { AccountSettingsComponent } from "../account-settings/account-settings.component";
+import { AccountSettingsComponent } from "./account-settings/account-settings.component";
 import { PromesasComponent } from "./promesas/promesas.component";
 
 import { NgModule } from '@angular/core';

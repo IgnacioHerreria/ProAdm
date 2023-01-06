@@ -14,18 +14,15 @@ import {
   styles: []
 })
 export class IncrementableComponent implements OnInit {
-  @ViewChild('txtProgress', {static: false}) txtProgress: ElementRef;
-
+  @ViewChild('txtProgress', { static: false }) txtProgress: ElementRef;
+  @Input() btnClass: string = "btn btn-danger"
   @Input("name") legend: string = "Leyenda";
   @Input() progress: number = 20;
   @Output("updateValue") changeValueProgress: EventEmitter<number> = new EventEmitter();
 
   constructor() {
-    console.log("Leyenda", this.legend);
-    console.log("Progress", this.progress);
   }
   ngOnInit() {
-    console.log("Leyenda", this.legend);
   }
 
   changeValue(valor: number) {

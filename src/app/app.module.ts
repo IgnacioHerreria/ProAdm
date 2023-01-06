@@ -2,7 +2,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 
-import { FormsModule } from "@angular/forms";
 //SERVICES
 import { ServiceModule } from "./services/service.module";
 
@@ -22,7 +21,6 @@ import { AuthModule } from "./auth/auth.module";
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    FormsModule,
     ServiceModule,
     AuthModule
   ],
