@@ -1,21 +1,25 @@
 import { Router, ActivationEnd } from "@angular/router";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { filter, map } from "rxjs/operators";
 import { Title, Meta, MetaDefinition } from "@angular/platform-browser";
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: "app-breadcrumbs",
   templateUrl: "./breadcrumbs.component.html",
   styles: []
 })
-export class BreadcrumbsComponent implements OnInit {
-  titleTab: string;
+export class BreadcrumbsComponent implements OnInit, OnDestroy {
+
+  public titleSubs$: Subscription;
+  public titleTab: string;
+
   constructor(
     private router: Router,
     private title: Title,
     private meta: Meta
   ) {
-    this.getDataRoute().subscribe(data => {
+    this.titleSubs$ = this.getDataRoute().subscribe(data => {
       this.titleTab = data.title;
       this.title.setTitle(this.titleTab);
       const metaTag: MetaDefinition = {
@@ -26,8 +30,11 @@ export class BreadcrumbsComponent implements OnInit {
       this.meta.updateTag(metaTag);
     });
   }
+  ngOnDestroy(): void {
+    this.titleSubs$.unsubscribe();
+  }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   getDataRoute() {
     return this.router.events.pipe(
